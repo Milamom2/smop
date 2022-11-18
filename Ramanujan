@@ -1,0 +1,19 @@
+function sumatoria (k)
+    k = input ( 'Ingrese Número de términos para la serie:' );
+  
+    s=0;
+    
+    
+     for  i= 0:k;
+         
+       s=s+((factorial(4*i))/((factorial(i))^4))*((1103+26390*i)/(396^(4*i)));
+      
+     end 
+      
+     constante=(2*sqrt(2))/(99^2);
+      
+    ramanujan=s*constante;
+    
+    fprintf('la aproximacion 1/pi para la formula de Ramanujan  terminos es %d',  ramanujan);
+
+end
